@@ -2,7 +2,7 @@
 
 SETUP
 
-0) Root your phone. Set up adb on your machine.
+0) Root your phone. Set up adb on your machine. Put all the scripts somewhere in your $PATH
 
 1) Open up the terminal on your phone. Take some pain to type the following:
 
@@ -32,4 +32,8 @@ Open your terminal and run:
 
 	android-shownotifications
 
-The above script assumes a command "open" exists, and takes a file path as a parameter and opens the associated application. Basically, this opens your image viewer application to show you the screen capture of your notification bar.
+The above script assumes a command called "open" exists. On OSX, "open" would take a file path
+and open it with the registered application. Basically, this is to launch some image viewer
+application to present the screenshot of your notification bar.
+
+
