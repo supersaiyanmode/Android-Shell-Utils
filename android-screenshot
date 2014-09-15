@@ -1,0 +1,4 @@
+#!/bin/sh
+
+adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > /tmp/android-screen.png
+open /tmp/android-screen.png

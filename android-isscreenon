@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if adb shell dumpsys power | grep 'Display Power: state=ON'; then
+	echo "Screen is ON."
+	exit 0
+else
+	echo "Screen is OFF."
+	exit 1
+fi

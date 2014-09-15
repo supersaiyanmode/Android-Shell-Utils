@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if ! android-isscreenon; then
+	android-unlock
+fi
+
+android-pullnotificationbar
+android-screenshot
+open /tmp/screen.png

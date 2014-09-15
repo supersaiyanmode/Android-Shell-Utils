@@ -1,0 +1,4 @@
+#!/bin/sh
+
+adb shell input keyevent 26
+adb shell input keyevent 82
