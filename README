@@ -1,0 +1,35 @@
+
+
+SETUP
+
+0) Root your phone. Set up adb on your machine.
+
+1) Open up the terminal on your phone. Take some pain to type the following:
+
+	su
+	setprop service.adb.tcp.port 5555
+	stop adbd
+	start adbd
+
+   Now to connect to your phone via adb:
+ 
+	adb connect <ip-of-phone>:5555
+
+====================================================
+
+LAZY-TIP #1: Make a phone call
+
+Open your terminal and run the following command:
+
+	android-call 987654321       # The script prefixes +91 for you.
+
+
+====================================================
+
+LAZY-TIP #2: Check your notifications
+
+Open your terminal and run:
+
+	android-shownotifications
+
+The above script assumes a command "open" exists, and takes a file path as a parameter and opens the associated application. Basically, this opens your image viewer application to show you the screen capture of your notification bar.
